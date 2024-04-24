@@ -5,8 +5,15 @@
     font-family: "Work Sans", sans-serif;
 }
 
-.btn-primary{
-
+.btn-primary{ 
+    border-radius: 8px;
+    color: #FFF;
+background: #FF900E;
+padding: 20px 25px;
+font-size: 20px;
+font-weight: 600;
+cursor: pointer;
+border: 0;
 }
 
 /* header style */
@@ -61,4 +68,36 @@ nav a{
     color: var(--Dark-03, #727272);
    font-size: 16px;
    font-weight: 400;
+}
+
+.banner img{
+    margin-top: 10px;
+    width: 100%;
+}
+
+/* responsive */
+/* small device */
+@media screen  and (max-width:576px){
+    header{
+        padding: 10px;
+    }
+    nav{
+        flex-direction: column;
+    }
+    .banner-content{
+        width: 100%;
+    }
+}
+
+/* medium device */
+@media screen and (min-width:576px) and (max-width:960px){
+    header{
+        padding: 20px;
+    }
+    nav{
+        flex-direction: column;
+    }
+    .banner-content{
+        width: 100%;
+    }
 }
